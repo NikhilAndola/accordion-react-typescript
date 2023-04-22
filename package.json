@@ -1,0 +1,46 @@
+{
+  "name": "@nicklabs/accordion",
+  "version": "1.0.0",
+  "description": "Customizable React Typescript Accordion that can be used in day to day tasks! <3",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJs --outDir dist/cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikhilAndola/accordion-react-typescript.git"
+  },
+  "keywords": [
+    "accordion",
+    "react accordion"
+  ],
+  "author": "nikhil andola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NikhilAndola/accordion-react-typescript/issues"
+  },
+  "homepage": "https://github.com/NikhilAndola/accordion-react-typescript#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4"
+  }
+}
